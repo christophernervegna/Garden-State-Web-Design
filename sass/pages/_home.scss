@@ -151,3 +151,52 @@
         align-self: flex-end;
     }
 }
+
+/****************** CONTACT ******************/
+
+.section-contact {
+    background-color: $color-tertiary;
+    padding: 7rem 4rem;
+}
+
+.contact {
+    display: block;
+
+    @include respond(tab-land) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @include respond(desktop) {
+        max-width: 114rem;
+        margin: 0 auto;
+    }
+}
+
+.contact--col {
+    margin-bottom: 3rem;
+}
+
+.contact .contact--col {
+    width: 100%;
+
+    @include respond(tab-land) {
+        width: 45%
+    }
+}
+
+.round-top {
+    display: contents;
+    overflow: hidden;
+    background-image: url(../img/mockup.png);
+}
+
+.round-top-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: left;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+}

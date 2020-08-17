@@ -183,6 +183,10 @@ a {
     .rwd-break-reverse {
       display: block; } }
 
+.form {
+  display: flex;
+  flex-direction: column; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -259,6 +263,40 @@ a {
       padding-left: 2rem; }
   .project:hover .overlay {
     opacity: 1; }
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 100%;
+  display: block;
+  transition: all .3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid green; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid red; }
+  .form__input::-webkit-input-placeholder {
+    color: #7e7e7e; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all .3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem); }
 
 .flex-grid-half {
   display: block; }
@@ -556,3 +594,42 @@ ul {
     flex-direction: column;
     align-items: center;
     align-self: flex-end; }
+
+/****************** CONTACT ******************/
+.section-contact {
+  background-color: #EEECE7;
+  padding: 7rem 4rem; }
+
+.contact {
+  display: block; }
+  @media (min-width: 56.25em) {
+    .contact {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; } }
+  @media (min-width: 75em) {
+    .contact {
+      max-width: 114rem;
+      margin: 0 auto; } }
+
+.contact--col {
+  margin-bottom: 3rem; }
+
+.contact .contact--col {
+  width: 100%; }
+  @media (min-width: 56.25em) {
+    .contact .contact--col {
+      width: 45%; } }
+
+.round-top {
+  display: contents;
+  overflow: hidden;
+  background-image: url(../img/mockup.png); }
+
+.round-top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: left;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px; }
