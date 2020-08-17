@@ -1,0 +1,46 @@
+.btn {
+
+    &,
+    &:link,
+    &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        font-family: 'Optician-Sans', sans-serif;
+        font-weight: normal;
+        color: $color-white;
+        text-align: center;
+        width: fit-content;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+
+    &--large {
+        padding: 1.5rem 4rem;
+        letter-spacing: 2px;
+        font-size: $default-font-size;
+    }
+
+    &--small {
+        padding: 1rem 3rem;
+        letter-spacing: 2px;
+        font-size: $default-font-size;
+    }
+
+    &--round {
+        border-radius: 100px;
+    }
+
+    &--secondary {
+        background-color: $color-secondary;
+    }
+
+    &--primary {
+        background-color: $color-primary;
+
+    }
+
+}

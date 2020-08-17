@@ -1,0 +1,69 @@
+.section-projects {
+    background-color: $color-primary;
+    padding: 7rem 0;
+}
+
+.project {
+    position: relative;
+    cursor: pointer;
+
+
+    &__shape {
+        width: 100%;
+        /* width of container */
+        height: 20rem;
+        /* height of container */
+        overflow: hidden;
+
+    }
+
+    &__img {
+        transition: all .3s ease-in-out;
+
+    }
+
+    &__caption {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.6rem;
+        font-weight: 300;
+        line-height: 1.5;
+        color: $color-white;
+
+        &-bold {
+            font-weight: 600;
+        }
+    }
+
+    &:hover &__caption {
+        opacity: 1;
+    }
+
+    &:hover &__img {
+        //transform: scale(1) translateX(-4rem);
+        opacity: 1;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgba($color-secondary, $alpha: 0.8);
+
+        &-text {
+            position: absolute;
+            top: 70%;
+            padding-left: 2rem;
+        }
+    }
+
+    &:hover .overlay {
+        opacity: 1;
+    }
+
+}

@@ -1,0 +1,153 @@
+.section-subheader {
+    background-color: $color-primary;
+    padding: 7rem 4rem;
+    display: block;
+
+    &__content {
+        width: 100%;
+        max-width: 114rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.section-features {
+    padding: 7rem 4rem 3rem 4rem;
+    display: block;
+}
+
+.icon-horizontal {
+    display: flex;
+    -webkit-box-align: start;
+    align-items: flex-start;
+
+
+    &__icon {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto;
+        padding-top: 1rem;
+    }
+}
+
+/****************** ABOUT ******************/
+
+.section-about {
+    background-color: $color-tertiary;
+    padding: 7rem 4rem;
+}
+
+.about {
+    display: block;
+
+    @include respond(tab-port) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    @include respond(desktop) {
+        max-width: 114rem;
+        margin: 0 auto;
+    }
+}
+
+.about--col {
+    margin-bottom: 3rem;
+}
+
+.about .about--col {
+    width: 100%;
+
+    @include respond(tab-port) {
+        width: 45%
+    }
+}
+
+.round-top {
+    display: contents;
+    overflow: hidden;
+    background-image: url(../img/mockup.png);
+}
+
+.round-top-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: left;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+}
+
+/****************** SERVICES ******************/
+
+.section-services {
+    padding: 7rem 4rem;
+}
+
+.services {
+    display: block;
+
+    @include respond(tab-land) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include respond(desktop) {
+        max-width: 114rem;
+        margin: 0 auto;
+    }
+
+    & .services--col {
+        width: 100%;
+
+        @include respond(tab-land) {
+            width: 30%
+        }
+    }
+
+    &--col {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-end;
+    }
+}
+
+/****************** PORTFOLIO ******************/
+
+.section-projects {
+    padding: 7rem 4rem;
+}
+
+.projects {
+    display: block;
+
+    @include respond(tab-land) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include respond(desktop) {
+        max-width: 114rem;
+        margin: 0 auto;
+    }
+
+    & .projects--col {
+        width: 100%;
+
+        @include respond(tab-land) {
+            width: 30%
+        }
+    }
+
+    &--col {
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: flex-end;
+    }
+}

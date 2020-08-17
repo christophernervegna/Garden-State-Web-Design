@@ -1,0 +1,25 @@
+.flex-grid-half {
+    display: block;
+
+    @include respond(tab-port) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include respond(desktop) {
+        max-width: 114rem;
+        margin: 0 auto;
+    }
+}
+
+.flex-grid-half .col {
+    width: 100%;
+
+    @include respond(tab-port) {
+        width: 45%
+    }
+}
+
+.col {
+    margin-bottom: 3rem;
+}

@@ -1,0 +1,121 @@
+@font-face {
+    src: url(fonts/Optician-Sans.otf);
+    font-family: Optician-Sans;
+}
+
+@font-face {
+    font-family: Mazius-Display;
+    src: url(fonts/MaziusDisplayRegular.otf);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Mazius-Display;
+    src: url(fonts/MaziusDisplayExtraitalic.otf);
+    font-style: oblique;
+}
+
+@font-face {
+    font-family: Mazius-Display;
+    src: url(fonts/MaziusDisplayItalic.otf);
+    font-style: italic;
+}
+
+.heading-primary {
+    font-family: 'Mazius-Display', serif;
+    font-size: 7.2rem;
+    line-height: 1;
+    font-weight: normal;
+    color: $color-primary;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    &__white {
+        color: $color-white;
+    }
+}
+
+.heading-secondary {
+    font-family: 'Mazius-Display', serif;
+    font-size: 5.4rem;
+    line-height: 1.2;
+    font-weight: normal;
+    color: $color-primary;
+    margin-bottom: 3rem;
+
+    &__italic {
+        font-weight: normal;
+        font-style: italic;
+    }
+
+    &__white {
+        color: $color-white;
+        font-weight: normal;
+    }
+}
+
+
+.heading-tertiary {
+    font-family: 'Optician-Sans', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+    font-weight: normal;
+    color: $color-secondary;
+    margin-bottom: 1rem;
+}
+
+.site-title {
+    font-family: 'Optician-Sans', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: normal;
+    color: $color-grey-text;
+}
+
+.paragraph-large {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $color-grey-text;
+    text-decoration: none;
+
+    &__white {
+        color: $color-white;
+    }
+
+    &__primary {
+        color: $color-primary;
+    }
+
+    &__bold {
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+}
+
+.paragraph-small {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: $color-grey-text;
+
+    &__white {
+        color: $color-white;
+    }
+
+    &__primary {
+        color: $color-primary;
+    }
+
+    &__bold {
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
