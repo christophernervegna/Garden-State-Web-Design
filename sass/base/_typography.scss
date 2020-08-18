@@ -89,7 +89,7 @@
     }
 
     &__bold {
-        font-weight: 700;
+        font-weight: 500;
         margin-bottom: 1rem;
     }
 }
@@ -118,4 +118,26 @@
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.project__header {
+    font-family: 'Optician-Sans', sans-serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: normal;
+    color: $color-white;
+    margin-bottom: 3rem;
+}
+
+.project__caption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 300;
+    color: $color-white;
+    margin-bottom: 3rem;
+}
+
+.bold {
+    font-weight: 700;
 }

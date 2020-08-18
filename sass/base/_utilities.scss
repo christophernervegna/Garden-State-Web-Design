@@ -1,9 +1,14 @@
-.u-center-text-desktop {
+.center {
+    width: 100%;
+    max-width: 114rem;
+    margin-right: auto;
+    margin-left: auto;
     text-align: left;
 
     @include respond(tab-land) {
         text-align: center;
     }
+
 }
 
 .u-center-text {
