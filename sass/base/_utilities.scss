@@ -8,7 +8,6 @@
     @include respond(tab-land) {
         text-align: center;
     }
-
 }
 
 .u-center-text {
@@ -47,7 +46,6 @@
     margin-right: 3.6rem;
 }
 
-
 .rwd-break {
     display: block;
 
@@ -62,4 +60,21 @@
     @include respond(tab-land) {
         display: block;
     }
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 50rem;
+    overflow: hidden;
+
+    @include respond(tab-land) {
+        max-width: 114rem;
+        padding: 0 3rem;
+    }
+}
+
+.container1 {
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
 }
