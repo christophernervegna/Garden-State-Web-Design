@@ -96,8 +96,14 @@ ul {
     }
 }
 
-.logo img {
-    max-width: 80%;
+.logo {
+    @include respond(tab-land) {
+        width: 25rem;
+    }
+
+    @include respond(desktop) {
+        width: 100%;
+    }
 }
 
 .hamburger-menu {

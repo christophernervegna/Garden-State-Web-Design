@@ -46,6 +46,9 @@ img {
   vertical-align: middle;
   display: inline-block; }
 
+.anchor {
+  scroll-margin-top: 8rem; }
+
 @font-face {
   src: url(fonts/Optician-Sans.otf);
   font-family: Optician-Sans; }
@@ -98,13 +101,6 @@ img {
   color: #DCA727;
   margin-bottom: 1rem; }
 
-.site-title {
-  font-family: 'Optician-Sans', sans-serif;
-  font-size: 2rem;
-  letter-spacing: 5px;
-  font-weight: normal;
-  color: #454545; }
-
 .paragraph-large {
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
@@ -156,6 +152,14 @@ a {
 
 .bold {
   font-weight: 700; }
+
+.site-title {
+  font-family: 'Optician-Sans', sans-serif;
+  font-size: 2.5rem;
+  line-height: 2rem;
+  letter-spacing: 5px;
+  font-weight: normal;
+  color: #264C51; }
 
 .center {
   width: 100%;
@@ -411,8 +415,13 @@ ul {
       border-bottom: 4px solid #DCA727;
       border-top: 4px solid transparent; }
 
-.logo img {
-  max-width: 80%; }
+@media (min-width: 56.25em) {
+  .logo {
+    width: 25rem; } }
+
+@media (min-width: 75em) {
+  .logo {
+    width: 100%; } }
 
 .hamburger-menu {
   font-size: 2.6rem;
