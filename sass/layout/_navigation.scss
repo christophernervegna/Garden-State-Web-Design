@@ -76,8 +76,8 @@ ul {
         letter-spacing: 2px;
         color: $color-white;
         padding: .5rem;
-        border-bottom: 4px solid transparent;
-        border-top: 4px solid transparent;
+        border-bottom: 3px solid transparent;
+        border-top: 3px solid transparent;
         transition: all .3s;
 
         @include respond(tab-land) {
@@ -88,9 +88,8 @@ ul {
         }
 
         &:hover {
-            border-bottom: 4px solid $color-secondary;
-            border-top: 4px solid transparent;
-
+            border-bottom: 3px solid $color-secondary;
+            border-top: 3px solid transparent;
         }
 
     }
@@ -142,4 +141,56 @@ ul {
     & .hamburger-menu .fa-bars {
         display: none;
     }
+}
+
+/****************** FOOTER ******************/
+
+.section-footer {
+    background-color: $color-white;
+    padding: 5rem 4rem;
+
+    @include respond(tab-land) {
+        padding: 10rem 0 2rem 0;
+    }
+}
+
+.footer-item {
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.footer-line {
+    height: 1px;
+    width: 20rem;
+    background: $color-primary;
+    opacity: .9;
+    margin-bottom: 3rem;
+}
+
+.link {
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    transition: all .3s;
+
+    &:hover {
+        border-bottom: 3px solid $color-secondary;
+        border-top: 3px solid transparent;
+    }
+}
+
+.footer-logo {
+    margin-bottom: 4rem;
+}
+
+.footer-bar {
+    height: 1px;
+    width: 100%;
+    background: $color-primary;
+    opacity: .5;
+    margin-bottom: 3rem;
+}
+
+.copyright {
+    opacity: .7;
+    font-size: 1.4rem;
 }

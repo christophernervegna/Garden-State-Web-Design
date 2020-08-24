@@ -1,7 +1,7 @@
 /****************** SECTION 000 ******************/
 .section-000 {
     background-color: $color-white;
-    padding: 2rem 4rem;
+    padding: 7rem 4rem;
 
     @include respond(tab-land) {
         padding: 10rem 0;
@@ -20,7 +20,6 @@
 }
 
 .padded {
-
     @include respond(tab-land) {
         padding-left: 3rem;
         padding-right: 3rem;
@@ -30,9 +29,6 @@
 .align-center {
     margin: 0 auto;
 }
-
-
-
 
 /****************** SECTION 001 ******************/
 
@@ -83,7 +79,6 @@
 }
 
 /****************** SECTION 002 ******************/
-
 
 .section-002 {
     background-color: $color-tertiary;

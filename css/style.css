@@ -204,6 +204,14 @@ a {
   margin-bottom: 3rem;
   transition: all .2s; }
 
+.footer-title {
+  font-family: 'Optician-Sans', sans-serif;
+  font-size: 3.2rem;
+  line-height: 2.8rem;
+  letter-spacing: 5px;
+  font-weight: normal;
+  color: #264C51; }
+
 .center {
   width: 100%;
   max-width: 114rem;
@@ -218,13 +226,16 @@ a {
   text-align: center; }
 
 .u-margin-bottom-big {
-  margin-bottom: 8rem; }
+  margin-bottom: 8rem !important; }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
+
+.u-margin-bottom-xsmall {
+  margin-bottom: .5rem; }
 
 .u-margin-top-huge {
   margin-top: 10rem; }
@@ -268,6 +279,18 @@ a {
 
 .max-width {
   max-width: 114rem; }
+
+.desktop-display {
+  display: none; }
+  @media (min-width: 75em) {
+    .desktop-display {
+      display: block; } }
+
+.mobile-display {
+  display: block; }
+  @media (min-width: 75em) {
+    .mobile-display {
+      display: none; } }
 
 .form {
   display: flex;
@@ -491,8 +514,8 @@ ul {
     letter-spacing: 2px;
     color: #fff;
     padding: .5rem;
-    border-bottom: 4px solid transparent;
-    border-top: 4px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
     transition: all .3s; }
     @media (min-width: 56.25em) {
       .nav-link {
@@ -501,8 +524,8 @@ ul {
         font-weight: 500;
         text-transform: initial; } }
     .nav-link:hover {
-      border-bottom: 4px solid #DCA727;
-      border-top: 4px solid transparent; }
+      border-bottom: 3px solid #DCA727;
+      border-top: 3px solid transparent; }
 
 @media (min-width: 56.25em) {
   .logo {
@@ -535,6 +558,47 @@ ul {
     display: block; }
   .menu-open .hamburger-menu .fa-bars {
     display: none; }
+
+/****************** FOOTER ******************/
+.section-footer {
+  background-color: #fff;
+  padding: 5rem 4rem; }
+  @media (min-width: 56.25em) {
+    .section-footer {
+      padding: 10rem 0 2rem 0; } }
+
+.footer-item {
+  margin-bottom: 1rem;
+  display: block; }
+
+.footer-line {
+  height: 1px;
+  width: 20rem;
+  background: #264C51;
+  opacity: .9;
+  margin-bottom: 3rem; }
+
+.link {
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+  transition: all .3s; }
+  .link:hover {
+    border-bottom: 3px solid #DCA727;
+    border-top: 3px solid transparent; }
+
+.footer-logo {
+  margin-bottom: 4rem; }
+
+.footer-bar {
+  height: 1px;
+  width: 100%;
+  background: #264C51;
+  opacity: .5;
+  margin-bottom: 3rem; }
+
+.copyright {
+  opacity: .7;
+  font-size: 1.4rem; }
 
 /****************** SECTION BG ******************/
 .section-hero {
@@ -672,7 +736,7 @@ ul {
 /****************** SECTION 000 ******************/
 .section-000 {
   background-color: #fff;
-  padding: 2rem 4rem; }
+  padding: 7rem 4rem; }
   @media (min-width: 56.25em) {
     .section-000 {
       padding: 10rem 0; } }
