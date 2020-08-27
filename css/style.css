@@ -114,11 +114,7 @@ img {
   font-weight: normal;
   color: #264C51;
   display: inline-block;
-  margin-bottom: 3rem;
-  transition: all .2s; }
-  .heading-secondary:hover {
-    transform: scale(1.05);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+  margin-bottom: 3rem; }
   .heading-secondary__italic {
     font-weight: normal;
     font-style: italic; }
@@ -201,7 +197,6 @@ a {
   font-weight: normal;
   color: #264C51;
   display: inline-block;
-  margin-bottom: 3rem;
   transition: all .2s; }
 
 .footer-title {
@@ -229,7 +224,7 @@ a {
   margin-bottom: 8rem !important; }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .u-margin-bottom-small {
   margin-bottom: 1.5rem; }
@@ -271,6 +266,14 @@ a {
   @media (min-width: 56.25em) {
     .main-container {
       max-width: 114rem; } }
+
+.secondary-container {
+  margin: 0 auto;
+  max-width: 50rem;
+  overflow: hidden; }
+  @media (min-width: 56.25em) {
+    .secondary-container {
+      max-width: 90rem; } }
 
 .container1 {
   width: 100%;
@@ -511,7 +514,7 @@ ul {
     font-size: 2.6rem;
     font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     color: #fff;
     padding: .5rem;
     border-bottom: 3px solid transparent;
@@ -519,10 +522,9 @@ ul {
     transition: all .3s; }
     @media (min-width: 56.25em) {
       .nav-link {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         color: #264C51;
-        font-weight: 500;
-        text-transform: initial; } }
+        font-weight: 500; } }
     .nav-link:hover {
       border-bottom: 3px solid #DCA727;
       border-top: 3px solid transparent; }
@@ -576,7 +578,8 @@ ul {
   width: 20rem;
   background: #264C51;
   opacity: .9;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  margin-top: 1rem; }
 
 .link {
   border-bottom: 3px solid transparent;
@@ -633,6 +636,17 @@ ul {
 .section-tertiary {
   background-color: #EEECE7;
   padding: 7rem 4rem; }
+
+.section-values {
+  background-color: #EEECE7;
+  padding: 7rem 4rem 3rem 4rem; }
+  @media (min-width: 56.25em) {
+    .section-values {
+      padding: 7rem 4rem 0rem 4rem; } }
+
+.section-services {
+  background-color: #fff;
+  padding: 2rem 4rem; }
 
 /****************** HERO ******************/
 .hero {
@@ -732,6 +746,14 @@ ul {
   align-items: center;
   align-self: flex-end;
   text-align: center; }
+
+.horizontal-line {
+  height: 1px;
+  width: 100%;
+  background: #264C51;
+  opacity: .9;
+  margin-bottom: 3rem;
+  margin-top: 3rem; }
 
 /****************** SECTION 000 ******************/
 .section-000 {

@@ -19,7 +19,7 @@
 }
 
 .u-margin-bottom-medium {
-    margin-bottom: 4rem;
+    margin-bottom: 4rem !important;
 }
 
 .u-margin-bottom-small {
@@ -73,6 +73,16 @@
 
     @include respond(tab-land) {
         max-width: 114rem;
+    }
+}
+
+.secondary-container {
+    margin: 0 auto;
+    max-width: 50rem;
+    overflow: hidden;
+
+    @include respond(tab-land) {
+        max-width: 90rem;
     }
 }
 
