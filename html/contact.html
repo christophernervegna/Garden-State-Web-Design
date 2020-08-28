@@ -71,21 +71,35 @@
                         out using the form below. We can chat over the phone, email, or at one of our local coffee
                         spots!
                     </p>
-                    <div class="form">
-                        <div class="form__group">
-                            <input type="text" class="form__input" placeholder="Full Name" id="name" required />
-                            <label for="name" class="form__label">Full Name</label>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <div class="form">
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full Name" id="name" name="name"
+                                    required />
+                                <label for="name" class="form__label">Full Name</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="number" class="form__input" placeholder="Phone Number" id="name"
+                                    name="phone" required />
+                                <label for="number" class="form__label">Phone Number</label>
+                            </div>
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email Address" id="email"
+                                    name="email" required />
+                                <label for="email" class="form__label">Email Address</label>
+                            </div>
+                            <div class="form__group">
+                                <textarea class="form__input textarea" name="message"
+                                    placeholder="Type your Message Here...." id="message" tabindex="5"
+                                    required></textarea>
+                                <label for="message" class="form__label">Type your Message Here....</label>
+                            </div>
+                            <div class="form__group">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+                            <a href="#" class="btn btn--small btn--secondary u-margin-top-xsmall">Request a Call</a>
                         </div>
-                        <div class="form__group">
-                            <input type="number" class="form__input" placeholder="Phone Number" id="name" required />
-                            <label for="number" class="form__label">Phone Number</label>
-                        </div>
-                        <div class="form__group">
-                            <input type="email" class="form__input" placeholder="Email Address" id="email" required />
-                            <label for="email" class="form__label">Email Address</label>
-                        </div>
-                        <a href="#" class="btn btn--small btn--secondary u-margin-top-xsmall">Request a Call</a>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>

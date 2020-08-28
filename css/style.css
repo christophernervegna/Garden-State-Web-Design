@@ -410,6 +410,9 @@ a {
   visibility: hidden;
   transform: translateY(-4rem); }
 
+.textarea {
+  height: 15rem; }
+
 .flex-grid-half {
   display: block; }
   @media (min-width: 56.25em) {
