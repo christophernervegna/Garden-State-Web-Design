@@ -75,30 +75,30 @@
                         <div class="form">
                             <div class="form__group">
                                 <input type="text" class="form__input" placeholder="Full Name" id="name" name="name"
-                                    required />
+                                    tabindex="1" required />
                                 <label for="name" class="form__label">Full Name</label>
                             </div>
                             <div class="form__group">
                                 <input type="number" class="form__input" placeholder="Phone Number" id="name"
-                                    name="phone" required />
+                                    tabindex="2" name="phone" required />
                                 <label for="number" class="form__label">Phone Number</label>
                             </div>
                             <div class="form__group">
                                 <input type="email" class="form__input" placeholder="Email Address" id="email"
-                                    name="email" required />
+                                    tabindex="3" name="email" required />
                                 <label for="email" class="form__label">Email Address</label>
                             </div>
                             <div class="form__group">
                                 <textarea class="form__input textarea" name="message"
-                                    placeholder="Type your Message Here...." id="message" tabindex="5"
+                                    placeholder="Type your Message Here...." id="message" tabindex="4"
                                     required></textarea>
                                 <label for="message" class="form__label">Type your Message Here....</label>
                             </div>
                             <div class="form__group">
-                                <div data-netlify-recaptcha="true"></div>
+                                <div data-netlify-recaptcha="true" tabindex="5"></div>
                             </div>
                             <input type="submit" value="Request a Call"
-                                class="btn btn--small btn--secondary u-margin-top-xsmall">
+                                class="btn btn--small btn--secondary u-margin-top-xsmall" tabindex="6">
                         </div>
                     </form>
                 </div>
