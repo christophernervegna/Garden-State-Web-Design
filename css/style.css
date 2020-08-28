@@ -230,7 +230,7 @@ a {
   margin-bottom: 1.5rem; }
 
 .u-margin-bottom-xsmall {
-  margin-bottom: .5rem; }
+  margin-bottom: 0.5rem; }
 
 .u-margin-top-huge {
   margin-top: 10rem; }
@@ -257,7 +257,7 @@ a {
   display: none; }
   @media (min-width: 56.25em) {
     .rwd-break-reverse {
-      display: block; } }
+      display: inline; } }
 
 .main-container {
   margin: 0 auto;
