@@ -720,7 +720,7 @@ ul {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     padding-top: 1rem;
-    transition: all .2s; }
+    transition: all 0.2s; }
     .feature-horizontal__icon:hover {
       transform: scale(1.1);
       text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
@@ -733,7 +733,7 @@ ul {
   background-position: center;
   border-top-left-radius: 1000px;
   border-top-right-radius: 1000px;
-  transition: all .2s; }
+  transition: all 0.2s; }
 
 .square-top-image {
   width: 100%;
@@ -744,6 +744,9 @@ ul {
 @media (min-width: 56.25em) {
   .img-shape {
     height: 40rem; } }
+
+.max-height {
+  max-height: 60rem; }
 
 /****************** SERVICES ******************/
 .vert-col {
@@ -758,7 +761,7 @@ ul {
   height: 1px;
   width: 100%;
   background: #264C51;
-  opacity: .9;
+  opacity: 0.9;
   margin-bottom: 3rem;
   margin-top: 3rem; }
 
