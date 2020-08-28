@@ -1,5 +1,9 @@
 .form {
 
+    &__group {
+        margin-bottom: 1rem;
+    }
+
     &__input {
         font-size: 1.5rem;
         font-family: inherit;
