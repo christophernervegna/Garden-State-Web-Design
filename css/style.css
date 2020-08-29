@@ -685,7 +685,8 @@ ul {
         padding: 0 7rem; } }
     @media (min-width: 75em) {
       .hero__left-content {
-        padding: 0 5rem 0 25rem; } }
+        max-width: 75rem;
+        margin: 0 auto; } }
   .hero__right {
     position: relative;
     width: 100%;
