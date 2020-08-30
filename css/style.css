@@ -574,7 +574,7 @@ ul {
   padding: 5rem 4rem; }
   @media (min-width: 56.25em) {
     .section-footer {
-      padding: 10rem 0 2rem 0; } }
+      padding: 10rem 4rem 2rem 4rem; } }
 
 .footer-item {
   margin-bottom: 1rem;
