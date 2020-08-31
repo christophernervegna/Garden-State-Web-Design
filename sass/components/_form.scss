@@ -51,3 +51,9 @@
 .textarea {
     height: 15rem;
 }
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

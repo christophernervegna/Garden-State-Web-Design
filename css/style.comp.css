@@ -417,6 +417,11 @@ a {
 .textarea {
   height: 15rem; }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 .flex-grid-half {
   display: block; }
   @media (min-width: 56.25em) {
