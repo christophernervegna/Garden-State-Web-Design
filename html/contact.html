@@ -2,6 +2,20 @@
 <html lang="en">
 
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176812794-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176812794-1');
+    </script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -23,7 +37,7 @@
     <header class="nav-header">
         <div class="container">
             <nav class="nav">
-                <a href="/index.html" class="logo">
+                <a href="/index.html" class="logo" tabindex="1">
                     <h2 class="site-title">Garden State<br class="rwd-break"> Web Design</h1>
                 </a>
                 <div class="hamburger-menu">
@@ -32,16 +46,16 @@
                 </div>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="/index.html" class="nav-link">Home</a>
+                        <a href="/index.html" class="nav-link" tabindex="2">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/html/about.html" class="nav-link">About</a>
+                        <a href="/html/about.html" class="nav-link" tabindex="3">About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/html/services.html" class="nav-link">Services</a>
+                        <a href="/html/services.html" class="nav-link" tabindex="4">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/html/contact.html" class="nav-link">Contact</a>
+                        <a href="/html/contact.html" class="nav-link" tabindex="5">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -92,8 +106,7 @@
                             </div>
                             <div class="form__group">
                                 <textarea class="form__input textarea" name="message"
-                                    placeholder="Type your Message Here...." id="message" tabindex="5"
-                                    required></textarea>
+                                    placeholder="Type your Message Here...." id="message" required></textarea>
                                 <label for="message" class="form__label">Type your Message Here....</label>
                             </div>
                             <div class="form__group">
