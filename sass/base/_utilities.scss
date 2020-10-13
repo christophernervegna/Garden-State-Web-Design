@@ -1,57 +1,52 @@
-.center {
-  width: 100%;
-  max-width: 114rem;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: left;
-
-  @include respond(tab-land) {
-    text-align: center;
-  }
+// MARGIN UTILITIES
+.u-margin-bottom-xsmall {
+  margin-bottom: 1rem !important;
 }
 
-.u-center-text {
-  text-align: center;
-}
-
-.u-margin-bottom-big {
-  margin-bottom: 8rem !important;
+.u-margin-bottom-small {
+  margin-bottom: 2rem !important;
 }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
 }
 
-.u-margin-bottom-small {
-  margin-bottom: 1.5rem;
-}
-
-.u-margin-bottom-xsmall {
-  margin-bottom: 0.5rem;
-}
-
-.u-margin-top-huge {
-  margin-top: 10rem;
-}
-
-.u-margin-top-big {
-  margin-top: 8rem;
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-top-xsmall {
-  margin-top: 2rem;
+  margin-top: 1rem !important;
 }
 
 .u-margin-top-small {
-  margin-top: 4rem;
+  margin-top: 2rem !important;
 }
 
-.u-margin-right {
-  margin-right: 3.6rem;
+.u-margin-top-medium {
+  margin-top: 4rem !important;
 }
 
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-huge {
+  margin-top: 10rem !important;
+}
+
+// COLOR
+.white {
+  color: $color-white;
+}
+
+.primary {
+  color: $color-primary;
+}
+
+// LINE BREAKS
 .rwd-break {
-  display: block;
+  display: inline;
 
   @include respond(tab-land) {
     display: none;
@@ -66,48 +61,34 @@
   }
 }
 
-.main-container {
-  margin: 0 auto;
-  max-width: 50rem;
-  overflow: hidden;
-
-  @include respond(tab-land) {
-    max-width: 114rem;
-  }
+// OTHER
+.anchor {
+  scroll-margin-top: 8rem;
 }
 
-.secondary-container {
-  margin: 0 auto;
-  max-width: 50rem;
-  overflow: hidden;
-
-  @include respond(tab-land) {
-    max-width: 90rem;
-  }
-}
-
-.container1 {
+.round-top-image {
   width: 100%;
-  max-width: 50rem;
-  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  transition: all 0.2s;
 }
 
-.max-width {
-  max-width: 114rem;
+.square-top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-position: center;
 }
 
-.desktop-display {
-  display: none;
-
-  @include respond(desktop) {
-    display: block;
+.img-shape {
+  @include respond(tab-land) {
+    height: 40rem;
   }
 }
 
-.mobile-display {
-  display: block;
-
-  @include respond(desktop) {
-    display: none;
-  }
+.max-height {
+  max-height: 60rem;
 }

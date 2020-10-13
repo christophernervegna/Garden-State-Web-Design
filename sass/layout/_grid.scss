@@ -1,54 +1,19 @@
-.flex-grid-half {
-    display: block;
-
-    @include respond(tab-land) {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    @include respond(desktop) {
-        margin: 0 auto;
-    }
+.container {
+    max-width: 1280px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    flex: 1;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
 }
 
-.align-items-center {
-    @include respond(tab-land) {
-        align-items: center;
-    }
-}
-
-.reverse {
-    flex-direction: column;
-
-    @include respond(tab-land) {
-        flex-direction: row-reverse;
-    }
-}
-
-.col-1-of-2 {
-    width: 100%;
-    margin-bottom: 3rem;
-
-    @include respond(tab-land) {
-        width: 45%;
-    }
-}
-
-
-.col-1-of-3 {
-    width: 100%;
-    margin-bottom: 3rem;
-
-    @include respond(tab-land) {
-        width: 30%;
-    }
-}
-
-.col-2-of-3 {
-    width: 100%;
-    margin-bottom: 3rem;
-
-    @include respond(tab-land) {
-        width: 60%;
-    }
+.container-small {
+    max-width: 960px;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    flex: 1;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
 }

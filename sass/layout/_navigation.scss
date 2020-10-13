@@ -17,7 +17,7 @@ ul {
     border-bottom: 1px solid $color-grey;
 }
 
-.container {
+.nav-container {
     width: 100%;
     max-width: 124rem;
     padding: 0 4rem;
@@ -142,56 +142,107 @@ ul {
     }
 }
 
+.site-title {
+    font-family: 'Optician-Sans', sans-serif;
+    font-size: 2.5rem;
+    line-height: 2rem;
+    letter-spacing: 5px;
+    font-weight: normal;
+    color: $color-primary;
+}
+
 /****************** FOOTER ******************/
 
 .section-footer {
     background-color: $color-white;
-    padding: 5rem 4rem;
+    padding: 5rem 0rem;
 
     @include respond(tab-land) {
-        padding: 10rem 4rem 2rem 4rem;
+        padding: 7rem 0rem 3rem 0rem;
+    }
+}
+
+.footer {
+    &__grid {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 8rem;
+        grid-row-gap: 28px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        margin-top: 3rem;
+
+        @include respond(tab-land) {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
     }
 
-}
+    &__title {
+        font-family: 'Optician-Sans', sans-serif;
+        font-size: 3.2rem;
+        line-height: 2.8rem;
+        letter-spacing: 5px;
+        font-weight: normal;
+        color: #264C51;
+        margin-bottom: 1.5rem;
+    }
 
-.footer-item {
-    margin-bottom: 1rem;
-    display: block;
-}
+    &__wrapper {
+        text-align: center;
+        margin-top: 7rem;
+        opacity: 0.8;
+    }
 
-.footer-line {
-    height: 1px;
-    width: 20rem;
-    background: $color-primary;
-    opacity: .9;
-    margin-bottom: 3rem;
-    margin-top: 1rem;
-}
+    &__copyright {
+        font-size: 1.4rem;
+        color: $color-primary;
+    }
 
-.link {
-    border-bottom: 3px solid transparent;
-    border-top: 3px solid transparent;
-    transition: all .3s;
+    &__logo {
+        width: 20rem;
+        margin-bottom: 2rem;
+    }
 
-    &:hover {
-        border-bottom: 3px solid $color-secondary;
+    &__heading {
+        position: relative;
+        margin-bottom: 3rem;
+        color: $color-primary;
+        font-size: 2.6rem;
+        font-weight: 700;
+
+        &::after {
+            content: '';
+            height: 3px;
+            background: $color-primary;
+            opacity: 0.9;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            right: 0;
+            width: 60%;
+
+            @include respond(tab-land) {
+                width: 80%;
+            }
+        }
+    }
+
+    &__item {
+        border-bottom: 2.8px solid transparent;
+        border-top: 1.8px solid transparent;
+        font-weight: 300;
+    }
+
+    &__link {
+        border-bottom: 3px solid transparent;
         border-top: 3px solid transparent;
+        transition: all 0.3s;
+        font-weight: 300;
+
+        &:hover {
+            border-bottom: 3px solid $color-secondary;
+            border-top: 3px solid transparent;
+        }
     }
-}
-
-.footer-logo {
-    margin-bottom: 4rem;
-}
-
-.footer-bar {
-    height: 1px;
-    width: 100%;
-    background: $color-primary;
-    opacity: .5;
-    margin-bottom: 3rem;
-}
-
-.copyright {
-    opacity: .7;
-    font-size: 1.4rem;
 }
