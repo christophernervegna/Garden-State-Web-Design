@@ -43,7 +43,7 @@
         }
     }
 
-    &--large {
+    &__large {
         padding: 1.5rem 4rem;
         letter-spacing: 2px;
         font-size: $default-font-size;
@@ -59,7 +59,7 @@
         border-radius: 100px;
     }
 
-    &--secondary {
+    &__secondary {
         background-color: $color-secondary;
     }
 
