@@ -73,7 +73,6 @@ ul {
         font-size: 2.6rem;
         font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 1px;
         color: $color-white;
         padding: .5rem;
         border-bottom: 3px solid transparent;
@@ -82,12 +81,13 @@ ul {
 
         @include respond(tab-land) {
             font-size: 1.6rem;
-            color: $color-primary;
-            font-weight: 500;
+            color: $color-grey-text;
+            font-weight: 600;
+            text-transform: capitalize;
         }
 
         &:hover {
-            border-bottom: 3px solid $color-secondary;
+            border-bottom: 3px solid $color-primary;
             border-top: 3px solid transparent;
         }
 
@@ -143,18 +143,18 @@ ul {
 }
 
 .site-title {
-    font-family: 'Optician-Sans', sans-serif;
     font-size: 2.5rem;
-    line-height: 2rem;
-    letter-spacing: 5px;
-    font-weight: normal;
+    line-height: 3rem;
+    font-weight: 800;
     color: $color-primary;
+    text-align: left;
+    display: inline;
 }
 
 /****************** FOOTER ******************/
 
 .section-footer {
-    background-color: $color-white;
+    background-color: $color-secondary;
     padding: 5rem 0rem;
 
     @include respond(tab-land) {
@@ -179,13 +179,20 @@ ul {
     }
 
     &__title {
-        font-family: 'Optician-Sans', sans-serif;
-        font-size: 3.2rem;
-        line-height: 2.8rem;
-        letter-spacing: 5px;
-        font-weight: normal;
-        color: #264C51;
-        margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-weight: 800;
+    color: $color-primary;
+    text-align: left;
+    margin-bottom: 3rem;
+    }
+
+    &__copy {
+        color: $color-white;
+        margin-bottom: .5rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        display: block;
     }
 
     &__wrapper {
@@ -196,7 +203,8 @@ ul {
 
     &__copyright {
         font-size: 1.4rem;
-        color: $color-primary;
+        color: rgba($color-white, .6);
+        font-style: italic;
     }
 
     &__logo {
@@ -232,6 +240,8 @@ ul {
         border-bottom: 2.8px solid transparent;
         border-top: 1.8px solid transparent;
         font-weight: 300;
+        color: $color-white;
+        font-size: 1.8rem;
     }
 
     &__link {
@@ -239,6 +249,8 @@ ul {
         border-top: 3px solid transparent;
         transition: all 0.3s;
         font-weight: 300;
+        color: $color-white;
+        font-size: 1.8rem;
 
         &:hover {
             border-bottom: 3px solid $color-secondary;

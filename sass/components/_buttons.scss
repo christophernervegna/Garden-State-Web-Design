@@ -12,13 +12,14 @@
         text-decoration: none;
         display: inline-block;
         position: relative;
-        font-family: 'Optician-Sans', sans-serif;
-        font-weight: normal;
+        font-weight: 800;
         line-height: 2.4rem;
-        color: $color-white;
+        letter-spacing: 1px;
         text-align: center;
         width: fit-content;
         transition: all 0.2s ease-in-out;
+        padding: 1rem 3rem;
+
 
 
         //Change for the <button> element
@@ -43,28 +44,35 @@
         }
     }
 
-    &__large {
-        padding: 1.5rem 4rem;
-        letter-spacing: 2px;
-        font-size: $default-font-size;
-    }
+    // &__large {
+    //     padding: 1.5rem 4rem;
+    //     letter-spacing: 2px;
+    //     font-size: $default-font-size;
+    // }
 
-    &__small {
-        padding: 1rem 3rem;
-        letter-spacing: 2px;
-        font-size: $default-font-size;
-    }
+    // &__small {
+    //     padding: 1rem 3rem;
+    //     letter-spacing: 2px;
+    //     font-size: $default-font-size;
+    // }
 
-    &__round {
-        border-radius: 100px;
-    }
+    // &__round {
+    //     border-radius: 100px;
+    // }
 
     &__secondary {
         background-color: $color-secondary;
+        color: $color-white;
     }
 
     &__primary {
         background-color: $color-primary;
+        color: $color-white;
+    }
+    
+    &__white {
+        background-color: $color-white;
+        color: $color-primary;
     }
 
     &__animated {

@@ -1,67 +1,41 @@
-@font-face {
-    src: url(fonts/Optician-Sans.otf);
-    font-family: Optician-Sans;
-}
-
-@font-face {
-    font-family: Mazius-Display;
-    src: url(fonts/MaziusDisplayRegular.otf);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Mazius-Display;
-    src: url(fonts/MaziusDisplayExtraitalic.otf);
-    font-style: oblique;
-}
-
-@font-face {
-    font-family: Mazius-Display;
-    src: url(fonts/MaziusDisplayItalic.otf);
-    font-style: italic;
-}
-
 h1 {
-    font-family: 'Mazius-Display', serif;
-    font-size: 7.2rem;
-    line-height: 1;
-    font-weight: normal;
-    color: $color-primary;
+    font-size: 8rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: $color-white;
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
 
 h2 {
-    font-family: 'Mazius-Display', serif;
-    font-size: 5.4rem;
+    font-size: 3.6rem;
     line-height: 1.2;
-    font-weight: normal;
-    color: $color-primary;
+    font-weight: 700;
+    color: $color-grey-text;
     display: inline-block;
+    text-align: center;
+    width: 100%;
 }
 
 
 h3 {
-    font-family: 'Optician-Sans', sans-serif;
     font-size: 1.6rem;
-    letter-spacing: 5px;
-    font-weight: normal;
-    color: $color-secondary;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: $color-primary;
     margin-bottom: 1rem;
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 400;
     line-height: 1.5;
     color: $color-grey-text;
     text-decoration: none; 
 }
 
 a {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 300;
     line-height: 1.5;
     color: $color-grey-text;

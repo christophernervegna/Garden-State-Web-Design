@@ -35,50 +35,52 @@
 
 <body>
 
-    <header class="nav-header">
-        <div class="container">
-            <nav class="nav">
-                <a href="/index.html" class="logo" tabindex="1">
-                    <h2 class="site-title">Garden State<br class="rwd-break"> Web Design</h1>
-                </a>
-                <div class="hamburger-menu">
-                    <i class="fas fa-bars"></i>
-                    <i class="fas fa-times"></i>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a href="/index.html" class="nav-link" tabindex="2">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/html/about.html" class="nav-link" tabindex="3">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/html/services.html" class="nav-link" tabindex="4">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/html/contact.html" class="nav-link" tabindex="5">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+  <header class="nav-header">
+    <div class="nav-container">
+      <nav class="nav">
+        <a href="/index.html" class="logo" tabindex="1">
+          <h2 class="site-title">Garden State<br class="rwd-break"> Web Design</h1>
+        </a>
+        <div class="hamburger-menu">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
         </div>
-    </header>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="/index.html" class="nav-link" tabindex="2">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="/html/about.html" class="nav-link" tabindex="3">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="/html/services.html" class="nav-link" tabindex="4">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="/html/contact.html" class="nav-link" tabindex="5">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 
 
 
     <main>
 
-        <!-- ============================================ -->
-        <!--            SERVICES-BANNER                   -->
-        <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                SERVICES-HERO                    -->
+    <!-- ============================================ -->
 
-        <section class="section-services-banner u-margin-top-big">
-            <div class="container">
-                <h3 class="services-banner__subheader">SERVICES</h3>
-                <h2 class="services-banner__header">Let our services give you the <br class="rwd-break-reverse">
-                    confidence to impact your community</h2>
-            </div>
-        </section>
+    <section class="section-services-hero u-margin-top-big">
+      <div class="container">
+        <div class="services-hero">
+          <h3>OUR SERVICES</h3>
+          <h1 class="services-hero__header">Our Digital Marketing Services</h1>
+
+      </div>
+      </div>
+    </section>
 
         <!-- ============================================ -->
         <!--                 WEB DESIGN               -->
@@ -92,15 +94,16 @@
                     </div>
                     <div class="web-design__text">
                         <div class="u-margin-bottom-small">
-                            <h2>
+                            <h2 class="web-design__header">
                                 Web Design & Development
                             </h2>
+                            <p class="web-design__price">Starting at $0 down. $150 a month.</p>
                         </div>
-                        <p>Whether you’re not currently online or have a
+                        <p class="u-margin-bottom-small">Whether you’re not currently online or have a
                             lackluster website, we can design and develop an industry leading online experience for your
                             company. Get started with our web design services! A well-thought-out website will effortlessly
-                            guide your customers through the site, creating an experience that keeps them coming back.<span
-                                class="bold"> $0 down. $150 a month.</span> </p>
+                            guide your customers through the site, creating an experience that keeps them coming back.</p>
+                        <!-- <a href="#" class="btn btn__primary">Learn more</a> -->
                     </div>
                 </div>
             </div>
@@ -118,12 +121,13 @@
                     </div>
                     <div class="branding__text">
                         <div class="u-margin-bottom-small">
-                            <h2>
+                            <h2 class="branding__header">
                                 Branding & Identity
                             </h2>
+                            <p class="branding__price">Pricing begins at $500</p>
                         </div>
-                        <p>Whether you’re a startup in need of fresh branding or an established business looking to get better results, we’re here to make your goals a reality. Done right, your brand identity has the power to make your brand’s personality shine. Let us create a memorable experience and watch as your customers form a life-long connection.<span
-                                class="bold"> Pricing begins at $500.</span> </p>
+                        <p class="u-margin-bottom-small">Whether you’re a startup in need of fresh branding or an established business looking to get better results, we’re here to make your goals a reality. Done right, your brand identity has the power to make your brand’s personality shine. Let us create a memorable experience and watch as your customers form a life-long connection.</p>
+                        <!-- <a href="#" class="btn btn__primary">Learn more</a> -->
                     </div>
                 </div>
             </div>
@@ -141,15 +145,16 @@
                     </div>
                     <div class="graphic-design__text">
                         <div class="u-margin-bottom-small">
-                            <h2>
+                            <h2 class="graphic-design__header">
                                 Graphic Design Services
                             </h2>
+                            <p class="graphic-design__price">Pricing starts at $250.</p>
                         </div>
-                        <p>Generate results with effective graphic design.
+                        <p class="u-margin-bottom-small">Generate results with effective graphic design.
                             We’re very efficient, which means you get top quality graphic design at an affordable price.
                             Producing results for your business is our primary focus. Great graphic design is just a side
-                            effect!<span
-                                class="bold"> Pricing starts at $250.</span> </p>
+                            effect!</p>
+                        <!-- <a href="#" class="btn btn__primary">Learn more</a> -->
                     </div>
                 </div>
             </div>
@@ -167,125 +172,133 @@
                     </div>
                     <div class="photo-video__text">
                         <div class="u-margin-bottom-small">
-                            <h2>
+                            <h2 class="photo-video__header">
                                 Photo & Video Services
                             </h2>
+                            <p class="photo-video__price">Pricing varies by project.</p>
                         </div>
-                        <p>You invested in a beautiful set of marketing
+                        <p class="u-margin-bottom-small">You invested in a beautiful set of marketing
                             collateral—website, brochures, booklets, etc., but it was ruined by pairing it with amateur
                             photography. A website or a print piece must have great imagery to be effective. Let us help
-                            deliver the beautiful story necessary for you to communicate your message.<span
-                                class="bold"> Pricing varies by project.</span> </p>
+                            deliver the beautiful story necessary for you to communicate your message.</p>
+                        <!-- <a href="#" class="btn btn__primary">Learn more</a> -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                 GALLERY                      -->
+    <!-- ============================================ -->
+
+    <section class="section-gallery">
+      <div class="gallery">
+        <img src="/img/portfolio1.png" alt="" class="gallery__img lb" />
+        <img src="/img/portfolio2.png" alt="" class="gallery__img lb" />
+        <img src="/img/portfolio3.png" alt="" class="gallery__img lb" />
+        <!-- <img src="/img/portfolio1.png" alt="" class="gallery__img lb" /> -->
+      </div>
+    </section>
+
+   <!-- ============================================ -->
     <!--                  CONTACT                     -->
     <!-- ============================================ -->
 
-    <section class="section-contact">
-        <div class="container">
-          <div class="contact__grid">
-            <div class="contact__left">
-              <img src="/img/contact.jpg" alt="chris" class="round-top-image max-height">
-            </div>
-            <div class="contact__right">
-              <div class="contact__content">
-                <h3>Contact Us</h3>
-                <h2 class="u-margin-bottom-small">Let's make an impact together</h2>
+    <section class="section-contact anchor" id="contact">
+      <div class="container">
+        <div class="u-margin-bottom-medium">
+          <h2 class="contact__header">Let's make an impact together</h2>
+          <p class="contact__copy">Want to see how we can work together? Reach out using the form below. We can chat over the phone, email, or at one of our local coffee spots!</p>
+        </div>
+        <form name="contact" method="POST" data-netlify="true">
+          <div class="contact-form">
+            <div class="contact__grid">
+              <div class="contact-form__group">
+                <label for="name" class="contact-form__label">Full Name</label>
+                <input type="text" class="contact-form__input" id="name" name="name" required />
               </div>
-              <p class="contact__copy">Want to see how we can work together? Reach
-                out using the form below. We can chat over the phone, email, or at one of our local coffee
-                spots!</p>
-                <form name="contact" method="POST" data-netlify="true">
-                  <div class="form">
-                    <div class="form__group">
-                      <input type="text" class="form__input" placeholder="Full Name" id="name" name="name" required />
-                      <label for="name" class="form__label">Full Name</label>
-                    </div>
-                    <div class="form__group">
-                      <input type="number" class="form__input" placeholder="Phone Number" id="name" name="phone" required />
-                      <label for="number" class="form__label">Phone Number</label>
-                    </div>
-                    <div class="form__group">
-                      <input type="email" class="form__input" placeholder="Email Address" id="email" name="email" required />
-                      <label for="email" class="form__label">Email Address</label>
-                    </div>
-                    <div class="form__group">
-                      <textarea class="form__input textarea" name="message" placeholder="Type your Message Here...."
-                        id="message" required></textarea>
-                      <label for="message" class="form__label">Type your Message Here....</label>
-                    </div>
-                    <div class="form__group">
-                      <div data-netlify-recaptcha="true"></div>
-                    </div>
-                    <input type="submit" value="Request a Call" class="btn btn__small btn__secondary u-margin-top-xsmall">
-                  </div>
-                </form>
+              <div class="contact-form__group">
+                <label for="email" class="contact-form__label">Email Address</label>
+                <input type="email" class="contact-form__input" id="email" name="email" required />
+              </div>
+              <div class="contact-form__group">
+                <label for="number" class="contact-form__label">Phone Number</label>
+                <input type="number" class="contact-form__input" id="phone-number" name="phone" required />
+              </div>
+              <div class="contact-form__group">
+                <label for="services" class="contact-form__label">What service(s) are you interested in?</label>
+                <input type="text" class="contact-form__input" id="services" name="services" required />
+              </div>
             </div>
+            <div class="contact-form__group">
+              <label for="message" class="contact-form__label">Project Details</label>
+              <textarea class="contact-form__input textarea" name="message"
+                id="message" required></textarea>
+            </div>
+            <input type="submit" value="Send Request!" class="btn btn__primary u-margin-top-xsmall" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                    FOOTER                    -->
+    <!-- ============================================ -->
+    <section class="section-footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__column">
+            <a href="/index.html">
+              <h2 class="footer__title">
+                Garden State<br />
+                Web Design
+              </h2>
+            </a>
+            <p class="footer__copy">Scotch Plains, NJ</p>
+            <a class="footer__copy" href="mailto:gardenstateweb@gmail.com">gardenstateweb@gmail.com</a>
+            <a class="footer__copy" href="tel:5554280940">(908) 419-9566</a>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__heading">Navigation</h4>
+            <ul>
+              <li>
+                <a href="/index.html" class="footer__link">Home</a>
+              </li>
+              <li>
+                <a href="/html/about.html" class="footer__link">About</a>
+              </li>
+              <li>
+                <a href="/html/services.html" class="footer__link">Services</a>
+              </li>
+              <li>
+                <a href="/html/contact.html" class="footer__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__heading">Services</h4>
+            <ul>
+              <li>
+                <a href="/html/services.html#web-design" class="footer__link">Web Design</a>
+
+              </li>
+              <li>
+                <a href="/html/services.html#branding" class="footer__link">Branding & Identity</a>
+              </li>
+              <li>
+                <a href="/html/services.html#graphic-design" class="footer__link">Graphic Design Services</a>
+              </li>
+              <li>
+                <a href="/html/services.html#photo-video" class="footer__link">Photo & Video</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-  
-      <!-- ============================================ -->
-      <!--                    FOOTER                    -->
-      <!-- ============================================ -->
-      <section class="section-footer">
-        <div class="container">
-          <div class="footer__grid">
-            <div class="footer__column">
-              <a href="/index.html">
-                <h2 class="footer__title">
-                  Garden State<br />
-                  Web Design
-                </h2>
-              </a>
-              <p class="footer__column">Scotch Plains, NJ</p>
-              <p class="footer__column">gardenstateweb@gmail.com</p>
-              <p class="footer__column">(908) 419-9566</p>
-            </div>
-            <div class="footer__column">
-              <h4 class="footer__heading">Navigation</h4>
-              <ul>
-                <li>
-                  <a href="/index.html" class="footer__link">Home</a>
-                </li>
-                <li>
-                  <a href="/html/about.html" class="footer__link">About</a>
-                </li>
-                <li>
-                  <a href="/html/services.html" class="footer__link">Services</a>
-                </li>
-                <li>
-                  <a href="/html/contact.html" class="footer__link">Contact</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer__column">
-              <h4 class="footer__heading">Services</h4>
-              <ul>
-                <li>
-                  <p class="footer__item">Web Design</p>
-                </li>
-                <li>
-                  <p class="footer__item">Branding & Identity</p>
-                </li>
-                <li>
-                  <p class="footer__item">Graphic Design Services</p>
-                </li>
-                <li>
-                  <p class="footer__item">Video & Photo</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__wrapper">
-            <p class="footer__copyright">Copyright © 2020 | Garden State Web Designs | All Rights Reserved</p>
-          </div>
+        <div class="footer__wrapper">
+          <p class="footer__copyright">Copyright © 2020 | Garden State Web Designs | All Rights Reserved</p>
         </div>
-      </section>
+      </div>
+    </section>
 
     </main>
 </body>
