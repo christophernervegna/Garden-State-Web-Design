@@ -20,7 +20,7 @@
   }
 
   &__header {
-    font-size: 5rem;
+    font-size: 4rem;
 
     @include respond(tab-land) {
       font-size: 6rem;
@@ -43,6 +43,16 @@
 }
 
 .about {
+
+  &__heading {
+    text-align: left;
+    padding-right: 10rem;
+
+    @include respond(tab-land) {
+      text-align: center;
+    }
+  }
+
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -115,6 +125,8 @@
   &__copy {
     color: white;
     font-size: 2rem;
+    max-width: 100rem;
+    margin: 0 auto;
   }
 }
 
@@ -129,8 +141,22 @@
 
   &__intro {
     max-width: 90rem;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
+
+    @include respond(tab-land) {
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    text-align: left;
+    // padding-right: 10rem;
+
+    @include respond(tab-land) {
+      text-align: center;
+      padding-right: 0rem;
+    }
   }
 
   &__grid {
@@ -214,8 +240,12 @@
 
 .services {
   &__heading {
-    text-align: center;
-    margin-bottom: 5rem;
+    display: none;
+
+    @include respond(tab-land) {
+      display: block;  
+      margin-bottom: 4rem;  
+    }
   }
 
   &__grid {
@@ -236,6 +266,7 @@
   &__content {
     text-align: center;
     transition: all .2s;
+    margin-top: -6rem;
   }
 
   &__content:hover {
@@ -297,16 +328,24 @@
 .contact {
 
   &__header {
-    text-align: center;
+    text-align: left;
     width: 100%;
     margin-bottom: 2rem;
+
+    @include respond(tab-land) {
+      text-align: center;
+    }
   }
 
   &__copy {
-    text-align: center;
+    text-align: left;
     width: 100%;
     max-width: 70rem;
     margin: 0 auto;
+
+    @include respond(tab-land) {
+      text-align: center;
+    }
   }
 
   &__grid {

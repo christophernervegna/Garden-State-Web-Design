@@ -618,7 +618,7 @@ ul {
       width: 65rem;
       margin: 0 auto; } }
   .about-hero__header {
-    font-size: 5rem; }
+    font-size: 4rem; }
     @media (min-width: 56.25em) {
       .about-hero__header {
         font-size: 6rem; } }
@@ -661,10 +661,20 @@ ul {
   padding: 7rem 0rem;
   background-color: #F8F8F8; }
 
+.values__heading {
+  text-align: left;
+  padding-right: 10rem; }
+  @media (min-width: 56.25em) {
+    .values__heading {
+      text-align: center; } }
+
 .values__intro {
   max-width: 95rem;
-  text-align: center;
+  text-align: left;
   margin: 0 auto; }
+  @media (min-width: 56.25em) {
+    .values__intro {
+      text-align: center; } }
 
 .values__grid {
   display: grid;
@@ -699,8 +709,11 @@ ul {
 
 .FAQ__header {
   margin-bottom: 4rem;
-  text-align: center;
+  text-align: left;
   display: block; }
+  @media (min-width: 56.25em) {
+    .FAQ__header {
+      text-align: center; } }
 
 .FAQ__subhead {
   font-weight: 700;
@@ -733,7 +746,7 @@ ul {
       width: 65rem;
       margin: 0 auto; } }
   .contact-hero__header {
-    font-size: 5rem; }
+    font-size: 4rem; }
     @media (min-width: 56.25em) {
       .contact-hero__header {
         font-size: 6rem; } }
@@ -899,7 +912,7 @@ ul {
       width: 75rem;
       margin: 0 auto; } }
   .hero__header {
-    font-size: 5rem; }
+    font-size: 4rem; }
     @media (min-width: 56.25em) {
       .hero__header {
         font-size: 6rem; } }
@@ -914,6 +927,13 @@ ul {
 .section-about {
   background-color: #F8F8F8;
   padding: 7rem 0rem; }
+
+.about__heading {
+  text-align: left;
+  padding-right: 10rem; }
+  @media (min-width: 56.25em) {
+    .about__heading {
+      text-align: center; } }
 
 .about__grid {
   display: grid;
@@ -973,7 +993,9 @@ ul {
 
 .banner__copy {
   color: white;
-  font-size: 2rem; }
+  font-size: 2rem;
+  max-width: 100rem;
+  margin: 0 auto; }
 
 /****************** SECTION FEATURES ******************/
 .section-features {
@@ -982,8 +1004,18 @@ ul {
 
 .features__intro {
   max-width: 90rem;
-  text-align: center;
+  text-align: left;
   margin: 0 auto; }
+  @media (min-width: 56.25em) {
+    .features__intro {
+      text-align: center; } }
+
+.features__heading {
+  text-align: left; }
+  @media (min-width: 56.25em) {
+    .features__heading {
+      text-align: center;
+      padding-right: 0rem; } }
 
 .features__grid {
   display: grid;
@@ -1047,8 +1079,11 @@ ul {
   padding: 7rem 0rem; }
 
 .services__heading {
-  text-align: center;
-  margin-bottom: 5rem; }
+  display: none; }
+  @media (min-width: 56.25em) {
+    .services__heading {
+      display: block;
+      margin-bottom: 4rem; } }
 
 .services__grid {
   display: grid;
@@ -1065,7 +1100,8 @@ ul {
 
 .services__content {
   text-align: center;
-  transition: all .2s; }
+  transition: all .2s;
+  margin-top: -6rem; }
 
 .services__content:hover {
   transform: translateY(-10px); }
@@ -1114,15 +1150,21 @@ ul {
   padding: 7rem 0rem; }
 
 .contact__header {
-  text-align: center;
+  text-align: left;
   width: 100%;
   margin-bottom: 2rem; }
+  @media (min-width: 56.25em) {
+    .contact__header {
+      text-align: center; } }
 
 .contact__copy {
-  text-align: center;
+  text-align: left;
   width: 100%;
   max-width: 70rem;
   margin: 0 auto; }
+  @media (min-width: 56.25em) {
+    .contact__copy {
+      text-align: center; } }
 
 .contact__grid {
   display: grid;
@@ -1154,7 +1196,7 @@ ul {
       width: 65rem;
       margin: 0 auto; } }
   .services-hero__header {
-    font-size: 5rem; }
+    font-size: 4rem; }
     @media (min-width: 56.25em) {
       .services-hero__header {
         font-size: 6rem; } }
